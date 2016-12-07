@@ -7,7 +7,7 @@ angular.
       	var directive = {
       		
       		restrict: 'AE',
-      		templateUrl: 'public/js/directive/header.html'
+      		templateUrl: '/public/js/directive/header.html'
 
       	};
       	return directive;
