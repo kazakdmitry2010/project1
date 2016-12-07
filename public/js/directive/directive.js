@@ -3,7 +3,7 @@ angular.
     .directive( 'header' ,headerF)
 
 
-      function header(){
+      function headerF(){
       	var directive = {
       		
       		restrict: AE,
