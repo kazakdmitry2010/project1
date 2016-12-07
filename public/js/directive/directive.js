@@ -1,13 +1,13 @@
 angular.
   module( 'app.headerAndFooter' , ['ngMaterial'])
-    .directive( 'header' ,headerF)
+    .directive( 'headerF' ,headerF)
 
 
       function headerF(){
       	var directive = {
       		
-      		restrict: AE,
-      		templateUrl: 'header.html'
+      		restrict: 'AE',
+      		templateUrl: 'public/js/directive/header.html'
 
       	};
       	return directive;
