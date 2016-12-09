@@ -1,5 +1,5 @@
 angular
-    .module('MdMenuOffsetDemo', [])
+    .module('MdMenuOffsetDemo', ['ngMaterial'])
     .controller('MdMenuOffsetDemoController', function($scope, $q, $timeout) {
         this.getMatches = function(searchText) {
             var deferred = $q.defer();
