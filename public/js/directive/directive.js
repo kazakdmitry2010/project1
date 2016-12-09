@@ -1,5 +1,5 @@
 angular.
-  module( 'app.headerAndFooter' , ['ngMaterial'])
+  module( 'app.headerAndFooter' , ['ngMaterial','MdMenuOffsetDemo'])
     .directive( 'headerF' ,headerF)
 
 
