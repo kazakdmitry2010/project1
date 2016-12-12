@@ -1,5 +1,11 @@
 angular.
-  module( 'app.headerAndFooter' , ['ngMaterial','MdMenuOffsetDemo'])
+  module( 'app.headerAndFooter' , ['ngMaterial','MdMenuOffsetDemo','ngRoute', 'cardDemo1'])
+  	.controller('ctrl', function($scope, $element, $attrs){
+  		this.name = 'ctrl';
+  		$scope.doSomething = function(){
+  			console.log('прикольно');
+  		}
+  	})
     .directive( 'headerF' ,headerF)
 
 
@@ -7,7 +13,8 @@ angular.
       	var directive = {
       		
       		restrict: 'AE',
-      		templateUrl: 'html/header.html'
+      		templateUrl: 'html/header.html',
+      		controller: 'ctrl'
 
       	};
       	return directive;

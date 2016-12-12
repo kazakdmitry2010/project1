@@ -9,13 +9,13 @@
 		            <div layout="row" style="background:yellow;">
 
 
-		                <md-menu style="background:yellow;" md-position-mode="target-right target" md-offset="10 50">
-		                    <md-button ng-mouseover="$mdOpenMenu($event)||false">
+		                <md-menu style="background:yellow;"  md-offset="15 40">
+		                    <md-button ng-click="$mdOpenMenu($event)">
 		                        Open menu
 		                    </md-button>
 		                    <md-menu-content width="3" style="background:yellow;">
-		                        <md-menu-item>
-		                            <md-button>Item 1</md-button>
+		                        <md-menu-item md-menu-origin md-menu-align-target>
+		                            <md-button><a href="#myFoto">ПРивет, Я</a></md-button>
 		                        </md-menu-item>
 		                        <md-menu-item>
 		                            <md-button>Item 2</md-button>
@@ -41,12 +41,12 @@
 		            <div layout="row" style="background:yellow;">
 
 
-		                <md-menu style="background:yellow;" md-position-mode="target-right target" md-offset="10 50">
-		                    <md-button ng-mouseover="$mdOpenMenu($event)">
+		                <md-menu style="background:yellow;" md-offset="15 40">
+		                    <md-button ng-click="$mdOpenMenu($event)">
 		                        Open menu
 		                    </md-button>
 		                    <md-menu-content width="3" style="background:yellow;">
-		                        <md-menu-item>
+		                        <md-menu-item md-menu-origin md-menu-align-target>
 		                            <md-button>Item 1</md-button>
 		                        </md-menu-item>
 		                        <md-menu-item>
@@ -73,12 +73,12 @@
 		            <div layout="row" style="background:yellow;">
 
 
-		                <md-menu style="background:yellow;" md-position-mode="target-right target" md-offset="10 50">
+		                <md-menu style="background:yellow;" md-offset="15 40">
 		                    <md-button ng-click="$mdOpenMenu($event)">
 		                        Open menu
 		                    </md-button>
 		                    <md-menu-content width="3" style="background:yellow;">
-		                        <md-menu-item>
+		                        <md-menu-item md-menu-origin md-menu-align-target>
 		                            <md-button>Item 1</md-button>
 		                        </md-menu-item>
 		                        <md-menu-item>
@@ -105,8 +105,8 @@
 		            <div layout="row" style="background:yellow;">
 
 
-		                <md-menu style="background:yellow;" md-position-mode="target-right target" md-offset="10 50">
-		                    <md-button ng-click="$mdOpenMenu($event)">
+		                <md-menu style="background:yellow;"  md-offset="15 40">
+		                    <md-button ng-click="$mdOpenMenu()">
 		                        Open menu
 		                    </md-button>
 		                    <md-menu-content width="3" style="background:yellow;">
@@ -130,8 +130,4 @@
 		</div>
 	</div>
 </div>
-<div layout="row" style="height:500px;background:gray;">dcdcddvdv
-<ng-view></ng-view>
-</div>
-
-<div layout="row">Footer</div>
+<div><md-button class="md-primary" ng-click = "doSomething()">abled</md-button></div>
